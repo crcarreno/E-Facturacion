@@ -25,7 +25,7 @@ public class Connect {
 		Connection con = null;        
         try{
             Class.forName("org.postgresql.Driver");
-            con = DriverManager.getConnection("jdbc:postgresql://10.129.100.5:5432/db_EFacturacion_","cajas", "cajas_facturacion");
+            con = DriverManager.getConnection("jdbc:postgresql://ip:port/db","user", "pass");
             
             System.out.println("Conectado a la BD fecha: " + fecha);
             conexion = true;
